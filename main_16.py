@@ -17,7 +17,7 @@ while True:
     print(
         'Варианты конвертации:\n' +
         '1) USD - доллары\n'+
-        '2) CNY - юани\.'
+        '2) CNY - юани'
     )
 #получить ввод от пользователя в виде варианта 
     choice = input()
@@ -25,11 +25,11 @@ while True:
 # умножить количество рублей на выбранный вариант курса,
     converted_value = RUB
     if choice == '1':
-        converted_value *= USD_TO_RUB
+        converted_value /= USD_TO_RUB
     elif choice == '2':
-        converted_value *= CNY_TO_RUB
+        converted_value /= CNY_TO_RUB
 # вывести его пользователю. 
-    print(f'{converted_value: 2f}')
+    print(f'{converted_value:.2f}')
 # Спрсить, хочет ли пользователь продолжить, 
     print("Хотите продолжить? ")
 # получить ввод от пользователя, 
