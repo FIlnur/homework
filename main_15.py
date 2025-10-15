@@ -4,6 +4,6 @@
 # 7*2=14
 
 number=int(input("Введите число: "))
-for n in range(0, 11):
+for n in range(1, 11):
     print(f"{number}*{n} = {number*n}")
 print()
